@@ -22,8 +22,10 @@ myEmitter.on('removeListener', (name, hander) => {
 
 myEmitter.emit('event1', 1);
 myEmitter.emit('event2', 2);
-myEmitter.emit('event3', 3);
 
 myEmitter.removeListener('event1', handler);
 
 myEmitter.removeAllListeners('event2');
+
+myEmitter.emit('event1', 1);
+myEmitter.emit('event2', 2);

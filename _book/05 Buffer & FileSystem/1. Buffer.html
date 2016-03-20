@@ -1,0 +1,626 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Buffer | NodeJS简明教程</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../05 Buffer &amp; FileSystem/2. FileSystem.html" />
+    
+    
+    <link rel="prev" href="../index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="5.1"
+        data-chapter-title="Buffer"
+        data-filepath="05 Buffer &amp; FileSystem/1. Buffer.md"
+        data-basepath=".."
+        data-revision="Sun Mar 20 2016 16:52:40 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> NodeJS 简介</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" >
+            
+            <span><b>1.1.</b> NodeJS 前世今生</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+            <span><b>1.2.</b> NodeJS 运行机制</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+            <span><b>1.3.</b> 开始使用 NodeJS</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> CommonJS规范</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" >
+            
+            <span><b>2.1.</b> require</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+            <span><b>2.2.</b> exports &amp; module.exports</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" >
+            
+            <span><b>2.3.</b> 内置模块</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" >
+            
+            <span><b>2.4.</b> npm 与第三方模块</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> 异步与回调</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" >
+            
+            <span><b>3.1.</b> ajax</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" >
+            
+            <span><b>3.2.</b> Promise</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" >
+            
+            <span><b>3.3.</b> async/await</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> 继承与事件</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" >
+            
+            <span><b>4.1.</b> inherits</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" >
+            
+            <span><b>4.2.</b> Events</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" >
+            
+            <span><b>5.</b> Buffer &amp; FileSystem</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="5.1" data-path="05 Buffer &amp; FileSystem/1. Buffer.html">
+            
+                
+                    <a href="../05 Buffer &amp; FileSystem/1. Buffer.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Buffer
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="05 Buffer &amp; FileSystem/2. FileSystem.html">
+            
+                
+                    <a href="../05 Buffer &amp; FileSystem/2. FileSystem.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        File System
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" >
+            
+                
+                    <a target="_blank" href="https:/github.com/jabez128/stream-handbook">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Stream
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" >
+            
+            <span><b>7.</b> HTTP Server</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" >
+            
+            <span><b>7.1.</b> HTTP 模块</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" >
+            
+            <span><b>7.2.</b> HTTP 协议介绍</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" >
+            
+            <span><b>7.3.</b> HTTP 缓存</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" >
+            
+            <span><b>7.4.</b> 自己写一个静态资源服务器</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" >
+            
+            <span><b>7.5.</b> Express</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" >
+            
+            <span><b>7.6.</b> 本地构建</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" >
+            
+            <span><b>8.</b> 进程</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" >
+            
+            <span><b>8.1.</b> 进程 vs 线程</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" >
+            
+            <span><b>8.2.</b> NodeJS 多进程</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" >
+            
+            <span><b>8.3.</b> Clusterpm2</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >NodeJS简明教程</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="buffer">Buffer</h1>
+<p>JavaScript&#x5BF9;&#x5B57;&#x7B26;&#x4E32;&#x64CD;&#x4F5C;&#x5341;&#x5206;&#x53CB;&#x597D;&#xFF0C;&#x65E0;&#x8BBA;&#x662F;&#x5355;&#x5B57;&#x8282;&#x5B57;&#x7B26;&#x4E32;&#x8FD8;&#x662F;&#x5BBD;&#x5B57;&#x8282;&#x5B57;&#x7B26;&#x4E32;&#x90FD;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;</p>
+<pre><code>&apos;0123456789&apos;.length; // 10
+&apos;&#x96F6;&#x58F9;&#x8D30;&#x53C1;&#x8086;&#x4F0D;&#x9646;&#x67D2;&#x634C;&#x7396;&apos;.length; // 10
+</code></pre><p>&#x5728;Nod&#x5E94;&#x7528;&#x9700;&#x8981;&#x5904;&#x7406;&#x7F51;&#x7EDC;&#x534F;&#x8BAE;&#x3001;&#x6570;&#x636E;&#x5E93;&#x3001;&#x56FE;&#x7247;&#x3001;&#x6587;&#x672C;&#x6587;&#x4EF6;&#x7B49;&#x5927;&#x91CF;&#x4E8C;&#x673A;&#x5236;&#x6570;&#x636E;&#xFF0C;JavaScript&#x81EA;&#x5E26;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x4E0D;&#x80FD;&#x6EE1;&#x8DB3;&#x8FD9;&#x4E9B;&#x573A;&#x666F;&#xFF0C;<code>Buffer</code>&#x5E94;&#x8FD0;&#x800C;&#x751F;</p>
+<blockquote>
+<p>Prior to the introduction of TypedArray in ECMAScript 2015 (ES6), the JavaScript language had no mechanism for reading or manipulating streams of binary data. The Buffer class was introduced as part of the Node.js API to make it possible to interact with octet streams in the context of things like TCP streams and file system operations.</p>
+</blockquote>
+<p>Buffer&#x662F;&#x4E00;&#x4E2A;&#x7C7B;&#x6570;&#x7EC4;&#x5BF9;&#x8C61;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x64CD;&#x4F5C;&#x5B57;&#x8282;&#x3002;&#x6027;&#x80FD;&#x76F8;&#x5173;&#x7684;&#x7531;C++&#x5B9E;&#x73B0;&#xFF0C;&#x975E;&#x6027;&#x80FD;&#x76F8;&#x5173;&#x90E8;&#x5206;JavaScript&#x5B9E;&#x73B0;&#x3002;Buffer&#x6240;&#x5360;&#x7528;&#x7684;&#x5185;&#x5B58;&#x4E0D;&#x662F;&#x901A;&#x8FC7;V8&#x5206;&#x914D;&#x7684;&#xFF0C;&#x5C5E;&#x4E8E;&#x5806;&#x5916;&#x5185;&#x5B58;&#x3002;</p>
+<p>NodeJS&#x5728;&#x542F;&#x7528;&#x7684;&#x65F6;&#x5019;&#x5C31;&#x5C06;Buffer&#x52A0;&#x8F7D;&#x5230;&#x4E86;&#x5168;&#x5C40;&#x5BF9;&#x8C61;&#xFF08;global&#xFF09;&#xFF0C;&#x4F7F;&#x7528;&#x7684;&#x65F6;&#x5019;&#x4E0D;&#x7528;require</p>
+<h2 id="&#x5B9E;&#x4F8B;&#x5316;">&#x5B9E;&#x4F8B;&#x5316;</h2>
+<pre><code>const buf1 = new Buffer(10);
+  // creates a buffer of length 10
+
+const buf2 = new Buffer([1,2,3]);
+  // creates a buffer containing [01, 02, 03]
+
+const buf3 = new Buffer(&apos;test&apos;);
+  // creates a buffer containing ASCII bytes [74, 65, 73, 74]
+
+const buf4 = new Buffer(&apos;t&#xE9;st&apos;, &apos;utf8&apos;);
+  // creates a buffer containing UTF8 bytes [74, c3, a9, 73, 74]
+
+const buf1 = new Buffer(&apos;buffer&apos;);
+const buf2 = new Buffer(buf1);
+
+buf1[0] = 0x61;
+console.log(buf1.toString());
+// &apos;auffer&apos;
+console.log(buf2.toString());
+// &apos;buffer&apos; (copy is not changed)
+</code></pre><h2 id="encoding">encoding</h2>
+<ul>
+<li><p>&apos;ascii&apos; - for 7-bit ASCII data only. This encoding method is very fast and will strip the high bit if set.</p>
+</li>
+<li><p>&apos;utf8&apos; - Multibyte encoded Unicode characters. Many web pages and other document formats use UTF-8.</p>
+</li>
+<li><p>&apos;utf16le&apos; - 2 or 4 bytes, little-endian encoded Unicode characters. Surrogate pairs (U+10000 to U+10FFFF) are supported.</p>
+</li>
+<li><p>&apos;ucs2&apos; - Alias of &apos;utf16le&apos;.</p>
+</li>
+<li><p>&apos;base64&apos; - Base64 string encoding. When creating a buffer from a string, this encoding will also correctly accept &quot;URL and Filename Safe Alphabet&quot; as specified in RFC 4648, Section 5.</p>
+</li>
+<li><p>&apos;binary&apos; - A way of encoding the buffer into a one-byte (latin-1) encoded string. The string &apos;latin-1&apos; is not supported. Instead, pass &apos;binary&apos; to use &apos;latin-1&apos; encoding.</p>
+</li>
+<li><p>&apos;hex&apos; - Encode each byte as two hexadecimal characters.</p>
+</li>
+</ul>
+<p>&#xA0;</p>
+<pre><code>const buf = new Buffer(&apos;hello world&apos;, &apos;ascii&apos;);
+
+console.log(buf.toString(&apos;hex&apos;));
+// prints: 68656c6c6f20776f726c64
+
+console.log(buf.toString(&apos;base64&apos;));
+// prints: aGVsbG8gd29ybGQ=
+</code></pre><h2 id="bytelength--length">byteLength &amp; length</h2>
+<p>&#x83B7;&#x53D6;&#x5B57;&#x7B26;&#x4E32;&#x5B9E;&#x9645;&#x5360;&#x7528;&#x5B57;&#x8282;&#x957F;&#x5EA6; <code>Buffer.byteLength(string[, encoding])</code></p>
+<pre><code>const str = &apos;\u00bd + \u00bc = \u00be&apos;;
+
+console.log(`${str}: ${str.length} characters, ` +
+        `${Buffer.byteLength(str, &apos;utf8&apos;)} bytes`);
+
+// &#xBD; + &#xBC; = &#xBE;: 9 characters, 12 bytes
+</code></pre><p>length &#x83B7;&#x53D6;Buffer&#x5BF9;&#x8C61;&#x5360;&#x7528;&#x7A7A;&#x95F4;</p>
+<pre><code>const buf = new Buffer(1234);
+
+console.log(buf.length);
+  // Prints: 1234
+
+buf.write(&apos;some string&apos;, 0, &apos;ascii&apos;);
+console.log(buf.length);
+  // Prints: 1234
+</code></pre><p>length&#x5C5E;&#x6027;&#x53EF;&#x53D8;</p>
+<pre><code>var buf = new Buffer(10);
+buf.write(&apos;abcdefghj&apos;, 0, &apos;ascii&apos;);
+console.log(buf.length);
+  // Prints: 10
+buf = buf.slice(0,5);
+console.log(buf.length);
+  // Prints: 5
+</code></pre><h2 id="bufferconcatlist-totallength">Buffer.concat(list[, totalLength])</h2>
+<p>&#x62FC;&#x63A5;&#x591A;&#x4E2A;Buffer&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x662F;Buffer&#x5BF9;&#x8C61;&#x5217;&#x8868;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x662F;&#x603B;&#x957F;&#x5EA6;&#xFF0C;&#x6DFB;&#x52A0;&#x540E;&#x53EF;&#x4EE5;&#x63D0;&#x5347;&#x6027;&#x80FD;</p>
+<pre><code>const buf1 = new Buffer(10).fill(0);
+const buf2 = new Buffer(14).fill(0);
+const buf3 = new Buffer(18).fill(0);
+const totalLength = buf1.length + buf2.length + buf3.length;
+
+console.log(totalLength);
+const bufA = Buffer.concat([buf1, buf2, buf3], totalLength);
+console.log(bufA);
+console.log(bufA.length);
+
+// 42
+// &lt;Buffer 00 00 00 00 ...&gt;
+// 42
+</code></pre><h2 id="bufcopytargetbuffer-targetstart-sourcestart-sourceend">buf.copy(targetBuffer[, targetStart[, sourceStart[, sourceEnd]]])</h2>
+<p>&#x590D;&#x5236;Buffer&#x5230;&#x53E6;&#x4E00;&#x4E2A;Buffer&#x5BF9;&#x8C61;&#xFF0C;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x5F00;&#x59CB;&#x3001;&#x7ED3;&#x675F;&#x4F4D;&#x7F6E;</p>
+<pre><code>const buf1 = new Buffer(26);
+const buf2 = new Buffer(26).fill(&apos;!&apos;);
+
+for (var i = 0 ; i &lt; 26 ; i++) {
+  buf1[i] = i + 97; // 97 is ASCII a
+}
+
+buf1.copy(buf2, 8, 16, 20);
+console.log(buf2.toString(&apos;ascii&apos;, 0, 25));
+  // Prints: !!!!!!!!qrst!!!!!!!!!!!!!
+</code></pre><h2 id="bufequalsotherbuffer">buf.equals(otherBuffer)</h2>
+<p>&#x6BD4;&#x8F83;&#x4E24;&#x4E2A;Buffer&#x5BF9;&#x8C61;&#x5185;&#x5BB9;&#x662F;&#x5426;&#x4E00;&#x81F4;</p>
+<pre><code>const buf1 = new Buffer(&apos;ABC&apos;);
+const buf2 = new Buffer(&apos;414243&apos;, &apos;hex&apos;);
+const buf3 = new Buffer(&apos;ABCD&apos;);
+
+console.log(buf1.equals(buf2));
+  // Prints: true
+console.log(buf1.equals(buf3));
+  // Prints: false
+</code></pre><h2 id="buffillvalue-offset-end-encoding">buf.fill(value[, offset[, end]][, encoding])</h2>
+<p>&#x4E3A;Buffer&#x5BF9;&#x8C61;&#x586B;&#x5145;&#x5185;&#x5BB9;</p>
+<pre><code>const b = new Buffer(50).fill(&apos;h&apos;);
+console.log(b.toString());
+  // Prints: hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+</code></pre><h2 id="bufindexofvalue-byteoffset-encoding">buf.indexOf(value[, byteOffset][, encoding])</h2>
+<pre><code>const buf = new Buffer(&apos;this is a buffer&apos;);
+
+buf.indexOf(&apos;this&apos;);
+  // returns 0
+buf.indexOf(&apos;is&apos;);
+  // returns 2
+buf.indexOf(new Buffer(&apos;a buffer&apos;));
+  // returns 8
+buf.indexOf(97); // ascii for &apos;a&apos;
+  // returns 8
+buf.indexOf(new Buffer(&apos;a buffer example&apos;));
+  // returns -1
+buf.indexOf(new Buffer(&apos;a buffer example&apos;).slice(0,8));
+  // returns 8
+
+const utf16Buffer = new Buffer(&apos;\u039a\u0391\u03a3\u03a3\u0395&apos;, &apos;ucs2&apos;);
+
+utf16Buffer.indexOf(&apos;\u03a3&apos;,  0, &apos;ucs2&apos;);
+  // returns 4
+utf16Buffer.indexOf(&apos;\u03a3&apos;, -4, &apos;ucs2&apos;);
+  // returns 6
+</code></pre><h2 id="bufslicestart-end">buf.slice([start[, end]])</h2>
+<p>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x548C;&#x539F;Buffer&#x5171;&#x4EAB;&#x5185;&#x5B58;&#x7684;Buffer&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x540E;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x6539;&#x53D8;offset&#x548C;&#x957F;&#x5EA6;</p>
+<pre><code>const buf1 = new Buffer(26);
+
+for (var i = 0 ; i &lt; 26 ; i++) {
+  buf1[i] = i + 97; // 97 is ASCII a
+}
+
+const buf2 = buf1.slice(0, 3);
+buf2.toString(&apos;ascii&apos;, 0, buf2.length);
+  // Returns: &apos;abc&apos;
+buf1[0] = 33;
+buf2.toString(&apos;ascii&apos;, 0, buf2.length);
+  // Returns : &apos;!bc&apos;
+</code></pre><h2 id="buftostringencoding-start-end">buf.toString([encoding[, start[, end]]])</h2>
+<pre><code>const buf = new Buffer(26);
+for (var i = 0 ; i &lt; 26 ; i++) {
+  buf[i] = i + 97; // 97 is ASCII a
+}
+buf.toString(&apos;ascii&apos;);
+  // Returns: &apos;abcdefghijklmnopqrstuvwxyz&apos;
+buf.toString(&apos;ascii&apos;,0,5);
+  // Returns: &apos;abcde&apos;
+buf.toString(&apos;utf8&apos;,0,5);
+  // Returns: &apos;abcde&apos;
+buf.toString(undefined,0,5);
+  // Returns: &apos;abcde&apos;, encoding defaults to &apos;utf8&apos;
+</code></pre><h2 id="bufwritestring-offset-length-encoding">buf.write(string[, offset[, length]][, encoding])</h2>
+<p>&#x5411;Buffer&#x5185;&#x5199;&#x6570;&#x636E;</p>
+<pre><code>const buf = new Buffer(256);
+const len = buf.write(&apos;\u00bd + \u00bc = \u00be&apos;, 0);
+console.log(`${len} bytes: ${buf.toString(&apos;utf8&apos;, 0, len)}`);
+  // Prints: 12 bytes: &#xBD; + &#xBC; = &#xBE;
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../index.html" class="navigation navigation-prev " aria-label="Previous page: Introduction"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../05 Buffer &amp; FileSystem/2. FileSystem.html" class="navigation navigation-next " aria-label="Next page: File System"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

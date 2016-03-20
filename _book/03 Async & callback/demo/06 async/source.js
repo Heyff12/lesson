@@ -18,10 +18,12 @@ function getTime(){
 
 async function print(){
     console.log(Date.now());
+
     var t = await getTime().catch(function(err){
         console.log(`Error: ${err}`);
         return false;
     });
+
     console.log(`Done: ${t}`);
 }
 

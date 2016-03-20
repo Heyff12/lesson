@@ -1,5 +1,6 @@
 function getTime(){
     var dtd = $.Deferred();
+
     setTimeout(function(){
         var now = Date.now();
 
@@ -8,7 +9,7 @@ function getTime(){
         }else{
             dtd.reject(now);
         }
-    }, 500);
+    }, 1000);
 
     return dtd.promise();
 }

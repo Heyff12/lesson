@@ -36,4 +36,4 @@ console.log(rect instanceof Rectangle);
 console.log(rect instanceof Shape);
 
 rect.move(20, 20);
-rect.area();
+console.log(rect.area());

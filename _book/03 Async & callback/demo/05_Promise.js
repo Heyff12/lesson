@@ -16,33 +16,33 @@ function getTime(){
     return promise;
 }
 
-getTime().then((n) => {
-    console.log(n);
-}, (n) => {
-    console.log(n);
-});
+// getTime().then((n) => {
+//     console.log(`OK: ${n}`);
+// }, (n) => {
+//     console.log(`Error: ${n}`);
+// });
 
 getTime().then(n => {
-    console.log(n);
+    console.log(`OK: ${n}`);
 }).catch(n => {
-    console.log(n);
+    console.log(`Error: ${n}`);
 });
 
-// function log(n){
-//     var promise = new Promise((resolve, reject) => {
-//         setTimeout(() => {
-//             console.log(n)
-//             resolve();
-//         }, 200);
-//     });
-//
-//     return promise;
-// }
-//
-// getTime().then(log)
-//        .then(() => {
-//            console.log('done');
-//        })
-//        .catch(err => {
-//            console.error(err + ' is odd!');
-//        });
+function log(n){
+    var promise = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log(n)
+            resolve();
+        }, 200);
+    });
+
+    return promise;
+}
+
+getTime().then(log)
+       .then(() => {
+           console.log('done');
+       })
+       .catch(err => {
+           console.error(err + ' is odd!');
+       });
