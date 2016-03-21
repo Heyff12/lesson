@@ -7,7 +7,7 @@ var rs =  fs.createReadStream('test.md');
 var content = [],
     size = 0;
 rs.on('data', function(chunk){
-    content.push(chunk);
+    content.push(chunk); // Buffer
     size += chunk.length;
 });
 

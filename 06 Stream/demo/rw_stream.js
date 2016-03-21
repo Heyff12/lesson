@@ -11,30 +11,22 @@ var fcopy = function(){
 
 var scopy = function(){
     var rs = fs.createReadStream('./source.mp4'),
-        ws = fs.createWriteStream('./files/source.mp4'),
+        ws = fs.createWriteStream('./files/xxx.mp4'),
         counter = 0;
 
-    console.log(1);
-    debugger;
-
     rs.on('data', function(chunk){
-        console.log(counter++);
         ws.write(chunk);
     });
 
     rs.on('end', function(){
         ws.end();
-        console.log('done!');
     });
-
-    console.log(2);
 };
 
-scopy();
 
 var scopy2 = function(){
     var rs = fs.createReadStream('./source.mp4'),
-        ws = fs.createWriteStream('./files/source.mp4'),
+        ws = fs.createWriteStream('./files/xxx.mp4'),
         counter = 0;
 
     rs.on('data', function(chunk){
@@ -56,7 +48,7 @@ var scopy2 = function(){
 
 var pipe = function(){
     fs.createReadStream('./source.mp4')
-      .pipe(fs.createWriteStream('./files/source.mp4'));
+      .pipe(fs.createWriteStream('./files/xxx.mp4'));
 }
 
 var pcopy = function(){
@@ -95,7 +87,7 @@ var pcopy = function(){
         out.cursorTo(0);
         out.write(`${length}KB\t/ ${total}KB\t ${percent}%\t ${speed}MB/s`);
 
-        if(length < total){
+        if(length < total){ //未完成
             setTimeout(display, 100);
         }else{
             var end = Date.now();
@@ -103,3 +95,5 @@ var pcopy = function(){
         }
     }, 500);
 };
+
+pcopy();

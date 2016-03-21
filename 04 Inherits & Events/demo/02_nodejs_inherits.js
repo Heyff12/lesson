@@ -15,7 +15,7 @@ Shape.prototype.move = function(x, y) {
 };
 
 function Rectangle(x, y, w, h) {
-  Shape.call(this);
+  Shape.call(this); // 借用构造函数
   this.w = w;
   this.h = h;
 }
