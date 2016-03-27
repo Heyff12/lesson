@@ -3,3 +3,6 @@
 *.mov
 node_modules
 npm-debug.log
+video
+qrsync
+upload.json
