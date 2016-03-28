@@ -26,12 +26,10 @@ var scopy = function(){
 
 var scopy2 = function(){
     var rs = fs.createReadStream('./source.mp4'),
-        ws = fs.createWriteStream('./files/xxx.mp4'),
-        counter = 0;
+        ws = fs.createWriteStream('./files/xxx.mp4');
 
     rs.on('data', function(chunk){
         if(ws.write(chunk) === false){
-            console.log('pause');
             rs.pause();
         }
     });
@@ -42,7 +40,6 @@ var scopy2 = function(){
 
     rs.on('end', function(){
         ws.end();
-        console.log('done!');
     });
 };
 

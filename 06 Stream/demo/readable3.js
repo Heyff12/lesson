@@ -10,7 +10,7 @@ rs._read = function () {
 
     setTimeout(function(){
         rs.push(String.fromCharCode(++c));
-    }, 1000);
+    }, 100);
 }
 
 rs.pipe(process.stdout);

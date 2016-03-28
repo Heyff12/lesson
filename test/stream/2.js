@@ -1,2 +1,5 @@
 var fs =require('fs');
-fs.createReadStream(process.argv[2]).pipe(process.stdout);
+// 0: node
+// 1: __dirname
+var path = process.argv[2];
+fs.createReadStream(path).pipe(process.stdout);
