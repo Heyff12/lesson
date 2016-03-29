@@ -1,0 +1,17 @@
+{
+  "name": "static_server",
+  "version": "1.0.0",
+  "description": "NodeJS static Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "http",
+    "static",
+    "server"
+  ],
+  "author": "sunluyong@gmail.com",
+  "license": "MIT"
+}
