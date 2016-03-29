@@ -6,6 +6,7 @@ const url = require('url');
 const path = require('path');
 const mime = require('../ss/mime.json');
 const handlebars = require('handlebars');
+var zlib = require("zlib");
 const public_folder = path.join(__dirname, 'node_modules');
 
 let server = http.createServer(function(req, res){
@@ -44,10 +45,30 @@ let server = http.createServer(function(req, res){
                 let extension = path.extname(pathName).replace('.', ''),
                     fileType = mime[extension] || 'text/plain';
 
-                res.writeHead(200, {
-                    'Content-Type': fileType
-                });
-                fs.createReadStream(realPath).pipe(res);
+                let acceptEncoding = req.headers['accept-encoding'] || '',
+                    compressable = fileType.match(/css|js|html|json|xml|txt/ig);
+
+                if(compressable && acceptEncoding.match(/\bgzip\b/)){
+                    res.writeHead(200, {
+                        'Content-Type': fileType,
+                        'Content-Encoding': 'gzip'
+                    });
+                    fs.createReadStream(realPath).pipe(zlib.createGzip()).pipe(res);
+
+                }else if(compressable && acceptEncoding.match(/\bdeflate\b/)){
+                    res.writeHead(200, {
+                        'Content-Type': fileType,
+                        'Content-Encoding': 'defalte'
+                    });
+                    fs.createReadStream(realPath).pipe(zlib.createDeflate()).pipe(res);
+
+                }else{
+                    res.writeHead(200, {
+                        'Content-Type': fileType
+                    });
+                    fs.createReadStream(realPath).pipe(res);
+                }
+
             }
         }
     });

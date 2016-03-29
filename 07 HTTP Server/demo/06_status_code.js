@@ -43,9 +43,9 @@ let server = http.createServer(function(req, res){
                 let extension = path.extname(pathName).replace('.', ''),
                     fileType = mime[extension] || 'text/plain';
 
-                    res.writeHead(200, {
-                        'Content-Type': fileType
-                    });
+                res.writeHead(200, {
+                    'Content-Type': fileType
+                });
                 fs.createReadStream(realPath).pipe(res);
             }
         }
