@@ -3,7 +3,11 @@
 const http = require('http');
 
 let server = http.createServer(function(req, res){
-    res.end('Hello World!');
+    debugger;
+    res.write('Hello World!');
+    res.end();
 });
 
 server.listen(8033);
+
+// 报文

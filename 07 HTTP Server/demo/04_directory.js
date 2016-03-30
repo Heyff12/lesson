@@ -11,17 +11,43 @@ let server = http.createServer(function(req, res){
         realPath = path.join(__dirname, pathName);
 
     fs.stat(realPath, (err, stats) => {
-        if(err){ // file do not exists
-            res.writeHead(404,{
-                    'content-type':'text/plain'
-                });
+        if(err){ // file or forder do not exists
+            res.writeHead(404, {
+                'content-type':'text/html'
+            });
             let source = fs.readFileSync('./template/404.tmpl'),
                 template = handlebars.compile(source.toString()),
                 data = {
-                    path: url.parse(req.url).name
+                    path: url.parse(req.url).pathname
                 };
 
             res.end(template(data));
+            // res.write(template(data));
+            // res.end();
+
+            // let path = url.parse(req.url).pathname;
+            //
+            // res.end(`<!DOCTYPE html>
+            // <html lang="en">
+            // <head>
+            //     <meta charset="UTF-8">
+            //     <title>404</title>
+            //     <style>
+            //         body{
+            //             width: 990px;
+            //             margin: 100px auto;
+            //         }
+            //
+            //         span{
+            //             color: red;
+            //             font-weight: bold;
+            //         }
+            //     </style>
+            // </head>
+            // <body>
+            //     file <span>${path}</span> do not exists;
+            // </body>
+            // </html>`);
         }else{
             if(stats.isDirectory()){
                 let source = fs.readFileSync('./template/directory.tmpl'),
@@ -40,6 +66,7 @@ let server = http.createServer(function(req, res){
             }
         }
     });
+
 });
 
 server.listen(process.argv[2] || 9000);
