@@ -11,7 +11,7 @@ const public_folder = path.join(__dirname, 'node_modules');
 
 let server = http.createServer(function(req, res){
     let pathName = url.parse(req.url).pathname,
-        realPath = path.join(public_folder, pathName);
+        realPath = path.join(public_folder, path.normalize(pathName.replace(/\.\./g, '')));
 
     fs.stat(realPath, (err, stats) => {
         if(err){ // file do not exists
@@ -46,11 +46,26 @@ let server = http.createServer(function(req, res){
                     fileType = mime[extension] || 'text/plain';
 
                 let acceptEncoding = req.headers['accept-encoding'] || '',
-                    compressable = extension.match(/css|js|html|json|xml|txt|md/ig);
+                    compressable = extension.match(/css|js|html|json|xml|txt|md/ig),
+                    cacheable = extension.match(/^(gif|png|jpg|css|js)$/ig);
 
                 res.statusCode = 200;
                 res.setHeader('Content-Type', fileType);
-                debugger;
+
+                if(cacheable){
+                    let expires = new Date();
+                    expires.setTime(expires.getTime() + 60 * 60 * 24 * 365 * 1000); //一年后失效
+                    res.setHeader("Expires", expires.toUTCString());
+                    res.setHeader("Cache-Control", "max-age=" + 60 * 60 * 24 * 365 * 1000);
+
+                    let lastModified = stats.mtime.toUTCString();
+                    res.setHeader("Last-Modified", lastModified);
+                    if(req.headers['if-modified-since'] && lastModified == req.headers['if-modified-since']){
+                        res.statusCode = 304;
+                        res.end();
+                    }
+                }
+
                 if(compressable && acceptEncoding.match(/\bgzip\b/)){
                     res.setHeader('Content-Encoding', 'gzip');
                     fs.createReadStream(realPath).pipe(zlib.createGzip()).pipe(res);
@@ -69,3 +84,5 @@ let server = http.createServer(function(req, res){
 });
 
 server.listen(process.argv[2] || 9000);
+
+// curl --header "If-Modified-Since: Sat, 14 Nov 2015 01:42:05 GMT" -i http://localhost:9000/express/index.js

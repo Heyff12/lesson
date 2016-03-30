@@ -46,26 +46,20 @@ let server = http.createServer(function(req, res){
                     fileType = mime[extension] || 'text/plain';
 
                 let acceptEncoding = req.headers['accept-encoding'] || '',
-                    compressable = fileType.match(/css|js|html|json|xml|txt/ig);
+                    compressable = extension.match(/css|js|html|json|xml|txt|md/ig);
+
+                res.statusCode = 200;
+                res.setHeader('Content-Type', fileType);
 
                 if(compressable && acceptEncoding.match(/\bgzip\b/)){
-                    res.writeHead(200, {
-                        'Content-Type': fileType,
-                        'Content-Encoding': 'gzip'
-                    });
+                    res.setHeader('Content-Encoding', 'gzip');
                     fs.createReadStream(realPath).pipe(zlib.createGzip()).pipe(res);
 
                 }else if(compressable && acceptEncoding.match(/\bdeflate\b/)){
-                    res.writeHead(200, {
-                        'Content-Type': fileType,
-                        'Content-Encoding': 'defalte'
-                    });
+                    res.setHeader('Content-Encoding', 'defalte');
                     fs.createReadStream(realPath).pipe(zlib.createDeflate()).pipe(res);
 
                 }else{
-                    res.writeHead(200, {
-                        'Content-Type': fileType
-                    });
                     fs.createReadStream(realPath).pipe(res);
                 }
 
