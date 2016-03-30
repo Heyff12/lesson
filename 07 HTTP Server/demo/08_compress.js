@@ -50,7 +50,7 @@ let server = http.createServer(function(req, res){
 
                 res.statusCode = 200;
                 res.setHeader('Content-Type', fileType);
-                debugger;
+
                 if(compressable && acceptEncoding.match(/\bgzip\b/)){
                     res.setHeader('Content-Encoding', 'gzip');
                     fs.createReadStream(realPath).pipe(zlib.createGzip()).pipe(res);

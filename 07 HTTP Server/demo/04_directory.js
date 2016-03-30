@@ -59,8 +59,12 @@ let server = http.createServer(function(req, res){
                     };
 
                 data.files = fs.readdirSync(realPath);
-
                 res.end(template(data));
+
+                // fs.readdir(realPath, (err, files) => {
+                //     data.files = files;
+                //     res.end(template(data));
+                // });
             }else{
                 fs.createReadStream(realPath).pipe(res);
             }
