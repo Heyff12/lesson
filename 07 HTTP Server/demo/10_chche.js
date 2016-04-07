@@ -6,7 +6,7 @@ const url = require('url');
 const path = require('path');
 const mime = require('../ss/mime.json');
 const handlebars = require('handlebars');
-var zlib = require("zlib");
+const zlib = require("zlib");
 const public_folder = path.join(__dirname, 'node_modules');
 
 let server = http.createServer(function(req, res){
@@ -51,6 +51,7 @@ let server = http.createServer(function(req, res){
 
                 res.statusCode = 200;
                 res.setHeader('Content-Type', fileType);
+                res.setHeader("Date", (new Date()).toUTCString());
 
                 if(cacheable){
                     let expires = new Date();
@@ -60,7 +61,11 @@ let server = http.createServer(function(req, res){
 
                     let lastModified = stats.mtime.toUTCString();
                     res.setHeader("Last-Modified", lastModified);
-                    if(req.headers['if-modified-since'] && lastModified == req.headers['if-modified-since']){
+
+                    let isExsits = req.headers['if-modified-since'],
+                        isEqual = lastModified === req.headers['if-modified-since'];
+
+                    if(isExsits && isEqual){
                         res.statusCode = 304;
                         res.end();
                     }
@@ -85,4 +90,4 @@ let server = http.createServer(function(req, res){
 
 server.listen(process.argv[2] || 9000);
 
-// curl --header "If-Modified-Since: Sat, 14 Nov 2015 01:42:05 GMT" -i http://localhost:9000/express/index.js
+// curl --header "If-Modified-Since: Tue, 09 Jun 2015 03:32:13 GMT" -i http://localhost:9000/etag/index.js
