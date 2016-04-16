@@ -1,0 +1,10 @@
+module.exports = function(githooks) {
+    githooks
+            .hook('pre-commit')
+            .rule({
+                'all': '*'
+            })
+            .on('match:all', function(files) {
+                console.log(files);
+            });
+};
