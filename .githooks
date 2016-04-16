@@ -1,11 +1,11 @@
 module.exports = function(githooks) {
     githooks
-            .hook('pre-commit')
-            .rule({
-                'all': '*'
-            })
-            .on('match:all', function(files) {
-                console.log('======');
-                console.log(files);
-            });
+        .hook('pre-commit')
+        .rule({
+            'all': '*'
+        })
+        .on('match:all', function(files) {
+            console.log('======');
+            console.log(files);
+        });
 };
