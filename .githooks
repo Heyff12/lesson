@@ -5,6 +5,7 @@ module.exports = function(githooks) {
                 'all': '*'
             })
             .on('match:all', function(files) {
+                console.log('======');
                 console.log(files);
             });
 };
