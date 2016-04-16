@@ -43,8 +43,11 @@
 	* [HTTP 缓存]()
 	* [自己写一个静态资源服务器]()
 	* [Express]()
-	* [本地构建]()
 
+* 构建
+    * [gulp](http://blog.h5jun.com/post/gulp-build.html)
+    * [npm scripts](http://www.w3ctrain.com/2016/02/27/why-npm-scripts/)
+    * [webpack]()
 
 * 进程
 

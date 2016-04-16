@@ -14,7 +14,7 @@ const public_folder = path.join(__dirname, 'public');
 let app = connect(),
     filePath = '',
     stats = null;
-
+debugger;
 app.use(mid404);
 
 app.use((req, res, next) => {
