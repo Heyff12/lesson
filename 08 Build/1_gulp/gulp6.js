@@ -9,7 +9,6 @@ const cheerio = require('cheerio');
 const HTMLMinifier = require('html-minifier').minify;
 const path = require('path');
 
-
 function minifyAndComboCSS(name, enc, files) {
 
     let content = '';
@@ -135,7 +134,7 @@ gulp.task('default', ['build-js-lib', 'build-css-lib', 'image'], ()=> {
             ////////////////////////////////////////////////////
 
             let imgs = $('img');
-            for (let i = 0, len = imgs.length; i < imgs.length; i++) {
+            for (let i = 0, len = imgs.length; i < len; i++) {
                 let img = $(imgs[i]),
                     src = 'src/' + img.attr('src');
                 if(/image\//.test(src)){
@@ -156,15 +155,16 @@ gulp.task('default', ['build-js-lib', 'build-css-lib', 'image'], ()=> {
 
             contents = $.html();
 
-
             let minified = HTMLMinifier(contents, {
                 minifyCSS: true,
                 minifyJS: true,
                 collapseWhitespace: true,
-                removeAttributeQuotes: true
+                removeAttributeQuotes: false
             });
 
             file.contents = new Buffer(minified, enc);
+
+            //file.contents = new Buffer(contents, enc);
 
             done(null, file, enc);
         }))

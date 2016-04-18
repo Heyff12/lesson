@@ -2,15 +2,15 @@
 const gulp = require('gulp');
 
 gulp.task('sync1', ()=> {
-    console.log('我是一个同步任务');
+    console.log('我是第一个同步任务');
 });
 
 gulp.task('sync2', ()=> {
-    console.log('我是另一个同步任务');
+    console.log('我是第二个同步任务');
 });
 
 gulp.task('sync3', ()=> {
-    console.log('我是又一个同步任务');
+    console.log('我是第三个同步任务');
 });
 
 gulp.task('async', (done)=> {
@@ -18,10 +18,9 @@ gulp.task('async', (done)=> {
     setTimeout(()=> {
         console.log('我是一个异步任务');
         done();
-    }, 2000);
+    }, 500);
 });
 
-gulp.task('syncs', ['async', 'sync1', 'sync2', 'sync3'],
-    ()=> {
-        console.log('砖搬完了！');
-    });
+gulp.task('default', ['async', 'sync1', 'sync2', 'sync3'], ()=> {
+    console.log('砖搬完了！');
+});

@@ -1,7 +1,13 @@
 
 }
 }  
-"1.0.2~" :"2HGUORHT"    
+"2.6.2~" :"SJ-YFILGU"    
+,"1.0.2~" :"2HGUORHT"    
+,"0.5.1~" :"REIFINIM-LMTH"    
+,"5.0.3~" :"SSEL-PLUG"    
+,"1.9.3~" :"PLUG"    
+,"21.4.3~" :"SSC-NAELC"    
+,"0.02.0~" :"OIREEHC"    
 { :"SEICNEDNEPED"  
 ,"TIM" :"ESNECIL"  
 ,"MOC.LIAMG@GNOYULNUS" :"ROHTUA"  

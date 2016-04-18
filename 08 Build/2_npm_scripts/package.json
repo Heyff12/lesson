@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "",
+    "preinstall": "echo install...",
     "scss": "node-sass --output-style cpmpressed -o dist/css src/scss",
     "prefix": "postcss -u autoprefixer --autoprefixer.browser '> 5%, ie 9' -r dist/css/*",
     "lint": "jslint --edition=latest src/js/*.js",

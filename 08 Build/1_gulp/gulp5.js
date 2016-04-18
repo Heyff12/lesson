@@ -7,12 +7,14 @@ const HTMLMinifier = require('html-minifier').minify;
 gulp.task('default', ()=> {
     gulp.src('src/index.html')
         .pipe(through.obj((file, enc, done)=> {
+
             let contents = file.contents.toString(enc);
+
             let minified = HTMLMinifier(contents, {
                 minifyCSS: true,
                 minifyJS: true,
                 collapseWhitespace: true,
-                removeAttributeQuotes: true
+                removeAttributeQuotes: false
             });
 
             file.contents = new Buffer(minified, enc);

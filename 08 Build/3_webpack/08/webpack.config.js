@@ -22,7 +22,7 @@ module.exports = {
     module: {
         loaders: [
             {test: /\.jsx$/, loader: 'jsx-loader'},
-            { test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader")},
+            {test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader")}
         ]
     }
 };
