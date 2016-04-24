@@ -12,7 +12,7 @@ module.exports = {
         'vendor': ['react', 'react-dom']
     },
     output: {
-        path: './build',
+        //path: './build',
         filename: 'bundle.js'
     },
     plugins: [
