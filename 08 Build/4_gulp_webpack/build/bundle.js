@@ -26,7 +26,7 @@ webpackJsonp([0],{
 
 	class AppComponent extends React.Component {
 	    render() {
-	        return React.createElement("div", null, "Hello World");
+	        return React.createElement("div", null, "Hello World!");
 	    }
 	}
 
