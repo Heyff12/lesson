@@ -4,11 +4,6 @@ const cluster = require('cluster');
 const http = require('http');
 const cpus = require('os').cpus();
 
-cluster.setupMaster({
-	exec: './w1.js'
-});
-
-
 if (cluster.isMaster) {
 	for (let i = 0; i < cpus.length; i++) {
 		cluster.fork();
@@ -25,7 +20,7 @@ if (cluster.isMaster) {
 		res.writeHead(200, {'Content-Type': 'text/plain'});
 		res.end('hello world\n');
 
-	}).listen(54321);
+	}).listen(9527);
 
 }
 

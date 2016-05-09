@@ -2,69 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="405130b9-b241-49fd-a756-fc2744fca5d3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/09 Process/p1.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/10 Important Modules/t1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/01 NodeJS Introduction/1. NodeJS前世今生.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/01 NodeJS Introduction/2. NodeJS运行机制.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/02 CommonJS/demo/01_self.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/02 CommonJS/demo/02_buildin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/02 CommonJS/demo/03_npm_module.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/02 CommonJS/demo/copy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/02 CommonJS/demo/css/min/test.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/02 CommonJS/demo/css/test.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/02 CommonJS/demo/gulpfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/02 CommonJS/demo/less/test.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/02 CommonJS/demo/modules/mod1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/02 CommonJS/demo/modules/mod2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/02 CommonJS/demo/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/02 CommonJS/demo/wrapper.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/03 Async &amp; callback/demo/01_ajax.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/03 Async &amp; callback/demo/02_jQuery_ajax.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/03 Async &amp; callback/demo/03_jQuery_ajax2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/03 Async &amp; callback/demo/04_deferred.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/03 Async &amp; callback/demo/05_Promise.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/03 Async &amp; callback/demo/06 async/.babelrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/03 Async &amp; callback/demo/06 async/source.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/03 Async &amp; callback/demo/06 async/starter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/03 Async &amp; callback/demo/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/04 Inherits &amp; Events/demo/01_browser_inherits.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/04 Inherits &amp; Events/demo/02_nodejs_inherits.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/04 Inherits &amp; Events/demo/03_inherits.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/04 Inherits &amp; Events/demo/04_events.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/04 Inherits &amp; Events/demo/05_extends.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/04 Inherits &amp; Events/demo/06_event_params.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/04 Inherits &amp; Events/demo/07_envet_once.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/04 Inherits &amp; Events/demo/08_remove_listeners.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/05 Buffer &amp; FileSystem/1. Buffer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/05 Buffer &amp; FileSystem/2. FileSystem.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/05 Buffer &amp; FileSystem/demo/1. badchar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/05 Buffer &amp; FileSystem/demo/2. string_decoder.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/05 Buffer &amp; FileSystem/demo/3. buffer_concat.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/05 Buffer &amp; FileSystem/demo/test.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/06 Stream/demo/readable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/06 Stream/demo/rw_stream.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/06 Stream/stream.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/07 HTTP Server/http2.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/gitbook/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/gitbook/images/apple-touch-icon-precomposed-152.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/gitbook/images/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/gitbook/plugins/gitbook-plugin-fontsettings/buttons.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/gitbook/plugins/gitbook-plugin-fontsettings/website.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/gitbook/plugins/gitbook-plugin-highlight/ebook.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/gitbook/plugins/gitbook-plugin-highlight/website.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/gitbook/plugins/gitbook-plugin-search/lunr.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/gitbook/plugins/gitbook-plugin-search/search.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/gitbook/plugins/gitbook-plugin-search/search.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/gitbook/plugins/gitbook-plugin-sharing/buttons.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/gitbook/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_book/search_index.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/09 Process/clu/c2.js" afterPath="$PROJECT_DIR$/09 Process/clu/c2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/09 Process/clu/w1.js" afterPath="$PROJECT_DIR$/09 Process/clu/w1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/09 Process/cp/master1.js" afterPath="$PROJECT_DIR$/09 Process/cp/master1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/09 Process/cp/master4.js" afterPath="$PROJECT_DIR$/09 Process/cp/master4.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/09 Process/cp/worker3.js" afterPath="$PROJECT_DIR$/09 Process/cp/worker3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/10 Net/n1.js" afterPath="$PROJECT_DIR$/10 Net/n1.js" />
     </list>
     <ignored path="book.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -100,7 +44,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/08 Build/4_gulp_webpack/build/index.html" />
         <option value="$PROJECT_DIR$/08 Build/4_gulp_webpack/app/AppComponent.jsx" />
         <option value="$PROJECT_DIR$/08 Build/4_gulp_webpack/test/a.jsx" />
         <option value="$PROJECT_DIR$/08 Build/4_gulp_webpack/package.json" />
@@ -133,24 +76,25 @@
         <option value="$PROJECT_DIR$/09 Process/child.js" />
         <option value="$PROJECT_DIR$/09 Process/p6.js" />
         <option value="$PROJECT_DIR$/10 Net/n2.js" />
-        <option value="$PROJECT_DIR$/10 Net/n1.js" />
         <option value="$PROJECT_DIR$/10 Net/c1.js" />
         <option value="$PROJECT_DIR$/09 Process/cp/w1.js" />
         <option value="$PROJECT_DIR$/09 Process/cp/m1.js" />
-        <option value="$PROJECT_DIR$/09 Process/cp/worker1.js" />
-        <option value="$PROJECT_DIR$/09 Process/cp/master1.js" />
-        <option value="$PROJECT_DIR$/09 Process/cp/master2.js" />
         <option value="$PROJECT_DIR$/09 Process/cp/worker2.js" />
         <option value="$PROJECT_DIR$/09 Process/cp/master22.js" />
-        <option value="$PROJECT_DIR$/09 Process/cp/master3.js" />
         <option value="$PROJECT_DIR$/09 Process/clu/c1.js" />
-        <option value="$PROJECT_DIR$/09 Process/clu/w1.js" />
-        <option value="$PROJECT_DIR$/09 Process/clu/c2.js" />
-        <option value="$PROJECT_DIR$/09 Process/cp/master4.js" />
-        <option value="$PROJECT_DIR$/09 Process/cp/worker3.js" />
         <option value="$PROJECT_DIR$/09 Process/p1.js" />
         <option value="$PROJECT_DIR$/09 Process/p2.js" />
         <option value="$PROJECT_DIR$/09 Process/p3.js" />
+        <option value="$PROJECT_DIR$/09 Process/cp/master1.js" />
+        <option value="$PROJECT_DIR$/09 Process/cp/worker1.js" />
+        <option value="$PROJECT_DIR$/10 Net/n1.js" />
+        <option value="$PROJECT_DIR$/09 Process/cp/master2.js" />
+        <option value="$PROJECT_DIR$/09 Process/cp/master3.js" />
+        <option value="$PROJECT_DIR$/09 Process/cp/master4.js" />
+        <option value="$PROJECT_DIR$/09 Process/clu/w1.js" />
+        <option value="$PROJECT_DIR$/09 Process/clu/c2.js" />
+        <option value="$PROJECT_DIR$/09 Process/cp/worker3.js" />
+        <option value="$PROJECT_DIR$/09 Process/pm2/index.js" />
       </list>
     </option>
   </component>
@@ -210,20 +154,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="book" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="book" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="book" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="09 Process" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -429,12 +359,12 @@
       <workItem from="1462002624037" duration="1223000" />
       <workItem from="1462026201350" duration="8000" />
       <workItem from="1462026869604" duration="270000" />
-      <workItem from="1462677870318" duration="12550000" />
+      <workItem from="1462677870318" duration="18488000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96165000" />
+    <option name="totallyTimeSpent" value="102103000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -490,13 +420,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/08 Build/3_webpack/08/app/AppComponent.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/08 Build/3_webpack/08/app/main.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -686,110 +609,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/10 Net/c1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/10 Net/n1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/09 Process/cp/master1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/09 Process/cp/worker1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/09 Process/cp/master2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/09 Process/cp/master22.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/09 Process/cp/worker2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="55" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/09 Process/clu/w1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/09 Process/clu/c1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/09 Process/clu/c2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/09 Process/cp/master3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="24" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/09 Process/cp/worker3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/09 Process/cp/master4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="32" column="24" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/clean.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -842,6 +661,118 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="4" column="25" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09 Process/cp/worker1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09 Process/cp/master1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10 Net/c1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10 Net/n1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09 Process/cp/worker2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09 Process/cp/master2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="11" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09 Process/cp/master22.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09 Process/cp/master3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09 Process/clu/c1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09 Process/clu/w1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09 Process/clu/c2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09 Process/cp/worker3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09 Process/cp/master4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09 Process/pm2/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
           <folding />
         </state>
       </provider>

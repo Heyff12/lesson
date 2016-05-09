@@ -9,7 +9,7 @@ let server = net.createServer(socket => {
 	socket.write('Welcome to server!\n');
 
 	timer = setInterval(() => {
-		socket.write('this is server');
+		socket.write('this is server\n');
 	}, 800);
 
 	socket.on('data', data => {

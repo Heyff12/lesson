@@ -6,7 +6,7 @@ const fork = require('child_process').fork;
 
 let server = net.createServer();
 
-server.listen(54321);
+server.listen(6321);
 
 var workers = {};
 
@@ -29,8 +29,18 @@ for (let i = 0; i < cpus.length; i++) {
 	createWorker();
 }
 
+process.on('message', (data) => {
+	console.log(data);
+});
+
 process.on('exit', () => {
 	for(let pid in workers){
 		workers[pid].kill();
 	}
 });
+
+console.log(process.pid);
+
+// setTimeout(() => {
+// 	process.exit(1);
+// }, 1000);
