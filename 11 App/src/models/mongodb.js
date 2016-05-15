@@ -1,8 +1,8 @@
 "use strict";
 
 const mongoose = require('mongoose');
-const port = require('../../config.js').dbPort;
+const connectionString = require('../../config.js').connectionString;
 
-mongoose.connect(`mongodb://localhost:${port}/demo`);
+mongoose.connect(connectionString);
 
 module.exports = mongoose;
