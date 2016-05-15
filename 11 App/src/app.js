@@ -3,7 +3,10 @@
 const express = require('express');
 const exp_hbs = require('express-handlebars');
 const path = require('path');
-const router = require('./routes/index.js')
+const router = require('./routes/index.js');
+const bodyParser = require('body-parser');
+const cookieSession = require('cookie-session');
+const cookieParser = require('cookie-parser');
 const conf = require('../config.js');
 
 const app = express();
@@ -14,6 +17,12 @@ app.engine('.hbs', exp_hbs({
 	extname: '.hbs'
 }));
 app.set('view engine', '.hbs');
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use(cookieParser());
+app.use(cookieSession({secret: 'test'}));
 
 router(app);
 
